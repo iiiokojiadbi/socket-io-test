@@ -25,7 +25,7 @@ const bestMessages = [
   { type: 'PEW-PE-WE', msg: 'Значит это что-то' },
 ];
 
-const getRandom = () => Math.floor(Math.random() * 5);
+const getRandom = () => Math.floor(Math.random() * 4);
 
 io.on('connection', (socket) => {
   console.log('Супер клиент подключился по сокету');
