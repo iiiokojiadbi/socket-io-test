@@ -8,7 +8,11 @@ const BestComponent = () => {
     console.log('Лучший компонент смонтирован');
 
     socket.on('best', (msg) => {
-      console.log(msg);
+      console.log('Лучшее сообщение: ', msg);
+    });
+
+    socket.on('super', (msg) => {
+      console.log('Супер сообщение в лучшем компоненте: ', msg);
     });
   }, [socket]);
 

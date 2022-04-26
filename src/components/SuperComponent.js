@@ -8,7 +8,7 @@ const SuperComponent = () => {
     console.log('Супер компонент смонтирован');
 
     socket.on('super', (msg) => {
-      console.log(msg);
+      console.log('Супер сообщение: ', msg);
     });
   }, [socket]);
 
